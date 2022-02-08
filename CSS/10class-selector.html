@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            background-color: aqua;
+        }
+        
+        #head1 {
+            color: red;
+        }
+
+        .note{
+            font-family: d2coding, monospace;
+        }
+
+        .error {
+            text-decoration: line-through;
+        }
+
+        .special {
+            text-decoration: underline;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <!--h1#head1>lorem3-->
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+   
+    <!--h1#head$*10>lorem3-->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Neque, sit explicabo.</h1>
+    <h1 id="head3" class="error">Aliquid, deleniti pariatur.</h1>
+    <h1 id="head4" class="error">Eligendi, quae deserunt.</h1>
+    <h1 id="head5" class="special">Nesciunt, maxime excepturi!</h1>
+    <h1 id="head6" class="">Modi, aspernatur nesciunt!</h1>
+    <h1 id="head7">Reprehenderit, autem et.</h1>
+    <h1 id="head8">Alias, neque unde.</h1>
+    <h1 id="head9" class="special">Explicabo, fugit impedit!</h1>
+    <h1 id="head10" class="note">Eos, possimus quae?</h1>
+
+    <hr>
+
+    <p>class attribute 작성시 주의할 점</p>
+    <p>대소문자 구분 됨.</p>
+    <p>사용할 수 있는 문자 : 영문대소문자, 숫자, -, _ </p>
+
+    <p>여러 요소가 같은 클래스 값을 가질 수 있음.</p>
+    <p>하나의 요소가 여러 class값을 가질 수 있음 (class값은 space로 구분) </p>
+    <!--h1.special.note>lorem3-->
+    <h1 class="special note">Lorem, ipsum dolor.</h1>
+
+</body>
+</html>
