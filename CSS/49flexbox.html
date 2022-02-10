@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .item {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .item:nth-child(odd) {
+            background-color: gold;
+            color: deeppink;
+
+        }
+
+        .item:nth-child(even) {
+            background-color: indigo;
+            color: white;
+        }
+
+        .box {
+            display: flex;
+            height: 300px;
+
+        }
+
+        .menu-container {
+            display: flex;
+            background-color: #222;
+
+        }
+
+        .menu-item {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 7px 15px;
+            text-align: center;
+            color: aliceblue;
+            border: 2px solid #222;
+            box-sizing: border-box;
+
+        }
+
+        .menu-item:hover {
+            border-bottom-color: gold;
+            background-color: #999;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <!-- #ex$.item*5{$}  -->
+        <div id="ex1" class="item">1</div>
+        <div id="ex2" class="item">2</div>
+        <div id="ex3" class="item">3</div>
+        <div id="ex4" class="item">4</div>
+        <div id="ex5" class="item">5</div>
+    </div>
+
+    <hr>
+
+    <!-- .menu-container>.menu-item*5>lorem1 -->
+    <div class="menu-container">     <!--flex container --> 
+        <div class="menu-item">Lorem.</div>   <!--flex item-->
+        <div class="menu-item">Maxime!</div>
+        <div class="menu-item">Enim?</div>
+        <div class="menu-item">Alias!</div>
+        <div class="menu-item">Dicta.</div>
+    </div>
+
+
+</body>
+
+</html>
