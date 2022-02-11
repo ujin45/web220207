@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .top,
+        .nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        
+        .nav {
+            background-color: black;
+            color: white;
+        }
+        
+        .top-left,
+        .top-right,
+        .nav-left,
+        .nav-right {
+            display: flex;
+        }
+        
+        .top-menu-item,
+        .nav-menu-item {
+            font-size: 26px;
+            padding: 10px 20px;
+            
+        }
+        .top-left >.top-menu-item:hover {
+            border-bottom-color: black;
+            background-color: rgb(4, 170, 109);
+        }
+        .top-right >.top-menu-item:hover {
+            display: inline;
+            width: 130px;
+            background-color: rgb(4, 170, 109);
+            color: white;
+            border-radius: 25px;
+            text-align: center;
+
+        }
+
+        .nav-left >.nav-menu-item:hover {
+            border-bottom-color: black;
+            background-color: rgb(4, 170, 109);
+        }
+        .nav-right >.nav-menu-item {
+            font-size: 2em;
+            color: yellow;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- .top>.top-left>.top-menu-item*5{link}^.top-right>.top-menu-item*3{link} -->
+    <div class="top">
+        <div class="top-left">
+            <div class="top-menu-item">W3S</div>
+            <div class="top-menu-item">Tutorial <i class="fa-solid fa-caret-down"></i></div>
+            <div class="top-menu-item">Reference <i class="fa-solid fa-caret-down"></i></div>
+            <div class="top-menu-item">Exercise <i class="fa-solid fa-caret-down"></i></div>
+            <div class="top-menu-item">Video </div>
+        </div>
+        <div class="top-right">
+            <div class="top-menu-item">Website</div>
+            <div class="top-menu-item">PaidCourses</div>
+            <div class="top-menu-item">Login</div>
+        </div>
+    </div>
+
+
+    <!-- .nav>.nav-left>.nav-menu-item*16{link}^.nav-right>.nav-menu-item*3{} -->
+    <div class="nav">
+        <div class="nav-left">
+            <div class="nav-menu-item">HTML</div>
+            <div class="nav-menu-item">CSS</div>
+            <div class="nav-menu-item">JAVASCRIPT</div>
+            <div class="nav-menu-item">SQL</div>
+            <div class="nav-menu-item">PYTHON</div>
+            <div class="nav-menu-item">PHP</div>
+            <div class="nav-menu-item">BOOTSTRAP</div>
+            <div class="nav-menu-item">HOWTO</div>
+            <div class="nav-menu-item">link</div>
+            <div class="nav-menu-item">link</div>
+            <div class="nav-menu-item">link</div>
+            <div class="nav-menu-item">link</div>
+            <div class="nav-menu-item">link</div>
+            <div class="nav-menu-item">link</div>
+            <div class="nav-menu-item">link</div>
+            <div class="nav-menu-item">link</div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-menu-item"><i class="fa-solid fa-circle-half-stroke"></i></div>
+            <div class="nav-menu-item"><i class="fa-solid fa-earth-asia"></i></div>
+            <div class="nav-menu-item"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+    </div>
+
+    <style>
+        .main-container {
+            display: flex;
+            height: 1200px;
+
+        }
+
+        .main-left,
+        .main-right {
+            width: 200px;
+            background-color: gray;
+
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        .main-left-menu-item {
+            padding: 5px 16px;
+        }
+    </style>
+
+    <!-- ..main-container>.main-left+.main-content+.main-right  -->
+    <div class="main-container">
+        <div class="main-left">
+            <!-- .main-left-menu-item*30>lorem1  -->
+            <div class="main-left-menu-item">Lorem.</div>
+            <div class="main-left-menu-item">Temporibus.</div>
+            <div class="main-left-menu-item">Ullam!</div>
+            <div class="main-left-menu-item">Eum.</div>
+            <div class="main-left-menu-item">Quae!</div>
+            <div class="main-left-menu-item">Nulla.</div>
+            <div class="main-left-menu-item">Adipisci.</div>
+            <div class="main-left-menu-item">Est.</div>
+            <div class="main-left-menu-item">Est?</div>
+            <div class="main-left-menu-item">Corrupti.</div>
+            <div class="main-left-menu-item">Corporis.</div>
+            <div class="main-left-menu-item">Aut!</div>
+            <div class="main-left-menu-item">Fuga.</div>
+            <div class="main-left-menu-item">Aliquid.</div>
+            <div class="main-left-menu-item">Porro!</div>
+            <div class="main-left-menu-item">Velit?</div>
+            <div class="main-left-menu-item">Debitis?</div>
+            <div class="main-left-menu-item">Unde!</div>
+            <div class="main-left-menu-item">Consectetur!</div>
+            <div class="main-left-menu-item">Veniam.</div>
+            <div class="main-left-menu-item">Fugiat?</div>
+            <div class="main-left-menu-item">Possimus?</div>
+            <div class="main-left-menu-item">Iste!</div>
+            <div class="main-left-menu-item">Esse!</div>
+            <div class="main-left-menu-item">Accusamus?</div>
+            <div class="main-left-menu-item">Dicta.</div>
+            <div class="main-left-menu-item">Debitis!</div>
+            <div class="main-left-menu-item">Tempora.</div>
+            <div class="main-left-menu-item">Animi.</div>
+            <div class="main-left-menu-item">Voluptatem?</div>
+        </div>
+        <div class="main-content">
+            <!-- h1>lorem3^button*2 -->
+            <h1>
+                Lorem, ipsum dolor.
+            </h1>
+
+
+            <style>
+                .button-container {
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+            </style>
+
+            <!-- .button-container -->
+            <div class="button-container">
+                <button>HOME</button>
+                <button>NEXT</button>
+            </div>
+
+        </div>
+        <div class="main-right"></div>
+    </div>
+</body>
+
+</html>
