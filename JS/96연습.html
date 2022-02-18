@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+        integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        let arr1 = [1, 2, 3, 4, 5];
+        for (let i = 0; i < arr1.length; i++) {
+            console.log(arr1[i]);  // 순서대로 나타남.
+        }
+        for (let item of arr1) {
+            console.log(item);     // for of 방식
+        }
+
+        for (let i = 4; i >= 0; i--) {
+            console.log(arr1[i]);  // 반대 순서대로 나타남.
+        }
+
+        for (let i = arr1.length - 1; i >= 0; i--) {
+            console.log(arr1[i]);  // 반대 순서대로 나타남.
+        }
+
+        for (let i = 1; i < arr1.length; i += 2) {
+            console.log(arr1[i]);    // 짝수를 나타냄. 
+        }
+
+        for (let i = 0; i < arr1.length; i++) {
+            if ((i % 2) == 0) {
+                console.log(arr1[i]);  // 01234 순서대로 짝수에 해당하는 값이 출력. 1,3,5 출력
+            }
+        }
+
+        for (let i = 1; i < arr1.length; i += 2) {
+            console.log(arr1[i]);       // 초기값 1 즉 값 2부터 +2해서 그 다음 값이 4 .  2,4 출력   
+        }
+
+
+
+
+
+        let sumEven = 0;
+        for (let i = 0; i < arr1.length; i += 2) {
+            sumEven += arr1[i]
+        }
+        console.log(sumEven);            // 01234 순서대로 짝수에 해당하는 값의 합. 9출력
+
+        sumOdd = 0;
+        for (let i = 1; i < arr1.length; i += 2) {
+            sumOdd += arr1[i]
+        }
+        console.log(sumOdd);             // 01234 순서대로 홀수에 해당하는 값의 합. 6출력
+
+
+
+        sum = 0;
+        let i;
+        for (let i = 0; i < arr1.length; i++) {
+            sum = sum + arr1[i];
+        }
+        console.log(sum);                // 모든 값을 더 함.
+
+
+
+        sum = 0;
+        for (let item of arr1) {
+            sum += item;
+        }
+        console.log(sum);                  // for of 로 모든 값을 더 함.
+
+
+
+
+        let str = "";
+        for (let i = 0; i < arr1.length; i++) {
+            str = str + arr1[i];
+        }
+        console.log(str);                 // 모든 값을 연결해서 나열
+
+
+
+
+
+        let arr2 = ["korea", "seoul", "busan", "jeju"];
+
+        let backStr = "";
+        for (let i = arr2.length - 1; i >= 0; i--) {
+            backStr += arr2[i];
+        }
+        console.log(backStr);                 // 각 문자열을 거꾸로 연결해서 나열 
+
+
+        let reverse = "";
+        for (let i = arr2.length - 1; i >= 0; i--) {
+            let letters = arr2[i].split("");
+            for (let j = letters.length - 1; j >= 0; j--) {
+                reverse += letters[j];
+            }
+        }
+        console.log(reverse);                   // 각 문자열을 분리 시킨 후 문자 하나씩 거꾸로 나열 
+
+
+        let reverseStr = "";
+        for (let c of str) {
+            reverseStr = c + reverseStr;
+        }
+        console.log(reverseStr);                 // for of로  리버스 연결 나열
+
+
+
+
+
+        let arr3 = [[1, 7, 3], [4, 9, 6], [2, 8, 9]];
+
+        for (let i = 0; i < arr3.length; i++) {
+            for (let j = 0; j < arr3.length; j++) {
+                console.log(arr3[i][j]);          // 문자열의 묶음 순서대로 나열. for을 2번 사용.
+            }
+        }
+
+        sum = 0;
+        for (let i = 0; i < arr3.length; i++) {
+            for (let j = 0; j < arr3.length; j++) {
+                sum += arr3[i][j];
+            }
+        }
+        console.log(sum);                         // 각 묶음의 문자열들을 다 더한 값  49출력
+
+
+
+
+        for (let i = arr3.length - 1; i >= 0; i--) {
+            for (let j = arr3[i].length - 1; j >= 0; j--) {
+                console.log(arr3[i][j]);         // 각 묶음 문자열들을 반대 순서대로 나열     
+            }
+        }
+
+
+        for (let item of arr3) {
+            console.log(item);                     // 각 묶음의 문자열 하나씩 나열
+        }
+
+        str ="";
+        for (let a of arr2) {
+            str += a;
+        }
+        console.log(str);                           // for of 로 문자열 연결해서 나열
+
+
+        sum = 0;
+        for (let subArray of arr3){
+            for (let item of subArray){
+                sum += item;
+            }
+        }
+        console.log(sum);                            // for of로 각 묶음 문자열들의 합
+
+     
+
+     
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
