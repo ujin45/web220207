@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+        integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        #button1,
+        #button3 {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        #button2,
+        #button4 {
+            background-color: rgb(13, 27, 231);
+            color: rgb(255, 251, 4);
+        }
+
+        #para1,
+        #para3 {
+            padding: 5px;
+            text-align: center;
+            background-color: bisque;
+            border: solid 1px black;
+        }
+
+        #para2,
+        #para4 {
+            padding: 5px;
+            text-align: center;
+            background-color: lightblue;
+            border: solid 1px black;
+        }
+    </style>
+
+    <script>
+
+
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("#para1").slideDown();
+            });
+            $("#button2").click(function () {
+                $("#para2").slideUp();
+            });
+            $("#button3").click(function () {
+                $("#para3").slideToggle(1000);
+            });
+            $("#button4").click(function () {
+                $("#para4").slideDown(3000);
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+
+    <!-- (button#button$+p#para$>lorem^br)*10 -->
+    <button id="button1">slideDown</button>
+    <p id="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia expedita quaerat fuga delectus exercitationem
+        dolore sequi eaque possimus vero. Impedit sed eum distinctio fugiat suscipit animi commodi incidunt quibusdam
+        dolorem?
+    </p>
+    <br>
+    <button id="button2">slideup</button>
+    <p id="para2">
+        Aut laboriosam, asperiores maxime omnis voluptates ipsa incidunt dignissimos, libero eius optio necessitatibus
+        commodi? Excepturi numquam temporibus reprehenderit cumque, voluptas, impedit mollitia officia, itaque libero
+        explicabo ea quos ipsum quisquam?
+    </p>
+    <br>
+    <button id="button3">slideToggle</button>
+    <p id="para3">
+        Error quisquam necessitatibus, ratione ea ducimus consequatur ab numquam. Dolore nemo aperiam nesciunt laborum
+        repellat? Odit, qui accusantium atque maxime ab aliquam, totam dolore beatae accusamus ducimus cumque eaque eos?
+    </p>
+    <br>
+    <button id="button4">slideDown</button>
+    <p id="para4">
+        Ex in fugiat rerum adipisci rem dolor ab omnis cum vero laboriosam iusto facilis, quam, itaque, sint assumenda
+        ullam ipsa nulla autem architecto? Rerum molestiae ea pariatur quas distinctio repellendus.
+    </p>
+    <br>
+    <button id="button5"></button>
+    <p id="para5">
+        Aliquam consequuntur itaque consectetur beatae omnis. Vel quasi assumenda doloribus! Sit architecto inventore
+        recusandae soluta, doloribus facilis reprehenderit impedit unde velit accusantium tempore quis, voluptate
+        voluptatibus ducimus, ipsam beatae animi!
+    </p>
+    <br>
+    <button id="button6"></button>
+    <p id="para6">
+        Suscipit eos iure laudantium voluptas odio commodi reprehenderit! Quisquam, dicta minima necessitatibus
+        doloribus modi debitis accusamus aspernatur esse sint ipsam qui, minus eligendi? Quasi facilis neque, fuga
+        assumenda blanditiis nobis!
+    </p>
+    <br>
+    <button id="button7"></button>
+    <p id="para7">
+        Quisquam, beatae. Nisi vel aliquam nostrum illo eaque molestiae dolor dolore consectetur neque sapiente
+        explicabo soluta mollitia deleniti rerum veritatis quo nihil, repudiandae, sequi, aperiam culpa. Impedit
+        praesentium iusto nemo.
+    </p>
+    <br>
+    <button id="button8"></button>
+    <p id="para8">
+        Delectus nam officiis ipsam esse et eos necessitatibus, nostrum adipisci accusamus assumenda, iste aperiam alias
+        iure aliquid tempora ad architecto quaerat, tempore a! Sequi nesciunt quod eum libero nam labore.
+    </p>
+    <br>
+    <button id="button9"></button>
+    <p id="para9">
+        Possimus necessitatibus unde aliquid et voluptatibus dolorum modi placeat nostrum assumenda mollitia, id
+        eligendi temporibus laboriosam totam enim nisi consequuntur iure, nihil nemo adipisci dignissimos quaerat.
+        Ratione praesentium nemo eius.
+    </p>
+    <br>
+    <button id="button10"></button>
+    <p id="para10">
+        Dicta dolores culpa obcaecati esse ipsam aliquam perferendis ducimus at illo quam perspiciatis fuga accusantium
+        eaque quo pariatur natus debitis nobis a distinctio sequi, aspernatur ratione, aperiam est? Minima, a?
+    </p>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
